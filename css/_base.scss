@@ -16,11 +16,20 @@ img {
     width: 100%;
     vertical-align: bottom;
 }
+ul {
+    padding: 0;
+    margin: 0;
+}
 
 li {
     list-style: none;
 }
 
+dd,dt {
+    margin: 0;
+}
+
 .top {
     text-align: center;
 }
+
