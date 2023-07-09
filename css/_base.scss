@@ -7,12 +7,20 @@ html {
 a {
     color: #333;
     text-decoration: none;
+    :hover {
+        opacity: 0.5;
+    }
 }
 
 img {
     width: 100%;
+    vertical-align: bottom;
 }
 
 li {
     list-style: none;
+}
+
+.top {
+    text-align: center;
 }
