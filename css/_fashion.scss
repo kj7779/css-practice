@@ -1,0 +1,193 @@
+$border-color: #c3c3c3;
+
+body {
+    color: #333;
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.site-title {
+    width: 109px;
+    line-height: 1px;
+    margin: 0 auto 36px auto;
+    @media screen and (max-width: 896px) {
+        margin-bottom: 26px;
+    }
+
+    a {
+        display: block;
+    }
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 1000px;
+    padding: 46px 0 26px 0;
+    margin: 0 auto 50px auto;
+    border-bottom: solid 1px $border-color;
+    @media screen and (max-width: 896px) {
+        margin-bottom: 0;
+        border-bottom: none;
+        padding: 36px 16px 16px 16px;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 896px) {
+        overflow-x: scroll;
+    }
+
+    .menu,
+    .login {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-right: 14px;
+    }
+
+    .login li {
+        margin-left: 14px;
+    }
+}
+
+// 商品ページ
+#item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    @media screen and (max-width: 896px) {
+        flex-direction: column;
+    }
+
+    .item-image {
+        max-width: 400px;
+        flex-shrink: 0; //画像が縮小されるのを防ぐ
+        margin-right: 60px;
+        @media screen and (max-width: 896px) {
+            max-width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    .item-info {
+        @media screen and (max-width: 896px) {
+            padding: 0 16px;
+        }
+        p {
+            margin-bottom: 30px;
+            line-height: 1.9;
+        }
+
+        .item-title {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            border-top: solid 1px $border-color;
+            border-bottom: solid 1px $border-color;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+#item .item-info .order-table {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .color,
+    .size {
+        width: 20%;
+    }
+
+    .quantity {
+        width: 60%;
+    }
+
+    td {
+        border-top: solid 1px $border-color;
+    }
+
+    th,
+    td {
+        font-weight: normal;
+        padding: 10px;
+        border-right: solid 1px $border-color;
+        text-align: center;
+    }
+
+    th:last-child,
+    td:last-child {
+        border-right: none;
+    }
+
+    select {
+        width: 100%;
+        border: solid 1px $border-color;
+        padding: 0 10px;
+    }
+}
+
+#item .item-info .cart-btn {
+    width: 100%;
+    background-color: #4b4b4b;
+    color: #fff;
+    display: block;
+    line-height: 1;
+    padding: 18px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#item .item-info .size-table {
+    width: 100%;
+    border-top: solid 1px $border-color;
+    border-left: solid 1px $border-color;
+
+    .size {
+        width: 16%;
+    }
+
+    .chest,
+    .weist,
+    .height {
+        width: 28%;
+    }
+
+    th {
+        background-color: #ecebeb;
+    }
+
+    th,
+    td {
+        font-weight: normal;
+        padding: 10px;
+        border-right: solid 1px $border-color;
+        border-bottom: solid 1px $border-color;
+        text-align: center;
+    }
+}
+
+footer {
+    padding: 10px 0;
+
+    .copyright {
+        font-size: 0.625rem;
+        text-align: center;
+    }
+
+}
