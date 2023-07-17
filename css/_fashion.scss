@@ -11,19 +11,6 @@ table {
     border-spacing: 0;
 }
 
-.site-title {
-    width: 109px;
-    line-height: 1px;
-    margin: 0 auto 36px auto;
-    @media screen and (max-width: 896px) {
-        margin-bottom: 26px;
-    }
-
-    a {
-        display: block;
-    }
-}
-
 .wrapper {
     max-width: 800px;
     margin: 0 auto;
@@ -38,6 +25,23 @@ table {
         margin-bottom: 0;
         border-bottom: none;
         padding: 36px 16px 16px 16px;
+    }
+}
+.fashion-site-title {
+    width: 109px;
+    line-height: 1px;
+    align-items: center;
+    margin: 0 auto 40px;
+    display: block;
+    @media screen and (max-width: 896px) {
+        margin-bottom: 26px;
+    }
+
+    a {
+        display: block;
+    }
+    img {
+        display: block;
     }
 }
 
